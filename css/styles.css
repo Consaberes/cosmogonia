@@ -1621,36 +1621,3 @@ flotante {
   margin-bottom: 5px;
   width: 50%;
 }
-.menu2 {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-end;
-  background-color: var(--white);
-  margin-left: 10px;
-  /*margin-right: 5px;*/
-  padding: 5px;
-}
-.menu-ident {
-  background-image: url(../images/cielo.jpg);
-  display: flex;
-  list-style: none;
-  justify-content:center;
-  align-items:center;
-  flex-wrap: wrap;
-  gap: 15px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  width: 100%;
-}
-.menu-ident-column {
-  display: flex;
-  flex-direction: column;
-  list-style: none;
-  justify-content: left;
-  align-items: center;
-  gap: 5px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  width: 100%;
-}
