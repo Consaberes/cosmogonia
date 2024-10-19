@@ -120,7 +120,6 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  background-color: var(--white);
   /*margin-left: 100px;*/
   /*margin-right: 5px;*/
   padding: 5px;
@@ -1601,4 +1600,24 @@ flotante {
     to {
         transform: rotate(360deg);
     }
+}
+.fondo_cos{
+  background-image: url(../images/A.cosmos.png);
+  background-size: cover;
+  background-position: top;
+  background-position: center;
+  border: 5px solid rgba(22, 8, 143, 0.938);
+
+}
+
+.la_verdadera{
+  display: flex;
+  flex-direction: row;
+
+  list-style: none;
+  align-items: center;
+  gap: 15px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 50%;
 }
