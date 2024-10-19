@@ -20,14 +20,13 @@
   width: 80%;
   margin: 0 auto;
   box-shadow: 0px 0px 5px rgb(220, 220, 223);
-  padding: 5px;
+  padding: 20px;
   
 }
 .ola{
-  width: 50%;
-  margin: 0 auto;
-  padding: 5px;
-  font-size: 19px;
+  display: flex;
+  flex-direction: column;
+ align-items: center;
 
 }
 .content_row {
@@ -57,6 +56,16 @@
 .title-is {
   display: flex;
   background-color: var(--gray_college);
+  height: 50px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+}
+
+.title-isc {
+  display: flex;
+  background-color: var(--blue_college);
   height: 50px;
   width: 100%;
   align-items: center;
@@ -924,7 +933,7 @@ a {
 }
 .programs {
   padding: 11px;
-  color: rgb(0, 0, 0); /*color de las letras*/
+  color: rg(0, 0, 0); /*color de las letras*/
   padding: 3px 10px;
   border: rgb(3, 7, 200) 5px solid;
   border-radius: 35px;
@@ -1084,21 +1093,26 @@ a {
   text-align: center;
 }
 .target {
+border: hsl(211, 52%, 42%);
+
+}
+
+
   .target-portfolio {
     position: relative;
     overflow: hidden;
-    border: rgb(7, 7, 7) solid 1px;
+    border: rgb(221, 211, 211) solid 1px;
     text-decoration: none;
-    height: 404px;
+    height: 370px;
     width: 370px;
   }
 
   .target-portfolio:hover {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-      0px 2px 1px rgba(0, 0, 0, 0.2);
+      0px 2px 1px rgba(212, 209, 209, 0.2);
     text-decoration: none;
   }
-}
+
 .contenedo {
   width: 100px;
   display: flex;
@@ -1561,4 +1575,30 @@ flotante {
   top: 50%;
   left: 80%;
   animation-duration: 5s;
+}
+
+
+
+
+.boton-giratorio {
+    display: inline-block;
+    cursor: pointer;
+    animation: girar 2s linear infinite;
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    margin-left: 20px; /* Agrega un margen a la izquierda si es necesario */
+
+  }
+
+.boton-giratorio img {
+    display: block; /* Elimina el espacio inferior en la imagen */
+    transform-origin: center; /* Establece el centro de la imagen como el punto de rotación */
+}
+
+@keyframes girar {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
