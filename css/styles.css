@@ -1559,29 +1559,7 @@ flotante {
   top: 50%;
   left: 80%;
   animation-duration: 5s;
-}
 
-.boton-giratorio {
-  display: inline-block;
-  cursor: pointer;
-  animation: girar 2s linear infinite;
-  text-decoration: none; /* Elimina el subrayado del enlace */
-  margin-left: 20px; /* Agrega un margen a la izquierda si es necesario */
-}
-
-.boton-giratorio img {
-  display: block; /* Elimina el espacio inferior en la imagen */
-  transform-origin: center; /* Establece el centro de la imagen como el punto de rotación */
-}
-
-@keyframes girar {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 .fondo-cos {
   background-image: url(../images/A.cosmos.png);
   background-size: cover;
