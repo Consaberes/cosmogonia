@@ -1582,24 +1582,26 @@ flotante {
 .boton-giratorio {
     display: inline-block;
     cursor: pointer;
-    animation: girar 2s linear infinite;
-    text-decoration: none; /* Elimina el subrayado del enlace */
-    margin-left: 20px; /* Agrega un margen a la izquierda si es necesario */
-
-  }
+    perspective: 1000px; /* Establece la perspectiva 3D */
+    margin-left: 20px; /* Ajusta según tu diseño */
+}
 
 .boton-giratorio img {
-    display: block; /* Elimina el espacio inferior en la imagen */
-    transform-origin: center; /* Establece el centro de la imagen como el punto de rotación */
+    display: block;
+    transform-style: preserve-3d; /* Asegura que los hijos se transformen en 3D */
+    animation: girar 2s linear infinite; /* Animación de rotación */
+    transform-origin: center; /* Gira desde el centro */
 }
 
 @keyframes girar {
     from {
-        transform: rotate(0deg);
+        transform: rotateY(0deg); /* Comienza sin rotación */
     }
     to {
-        transform: rotate(360deg);
+        transform: rotateY(360deg); /* Rotación completa en el eje Y */
     }
+}
+
 }
 .fondo_cos{
   background-image: url(../images/A.cosmos.png);
