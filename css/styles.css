@@ -1623,3 +1623,7 @@ flotante {
   margin-bottom: 5px;
   width: 50%;
 }
+.yellow {
+  color: var(--yellow);
+}
+
