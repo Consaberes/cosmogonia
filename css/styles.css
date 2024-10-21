@@ -8,7 +8,6 @@
   --color_network: rgba(141, 134, 134, 1);
   --shadow: rbga(220, 220, 223, 1);
   --red_collage_m: rgba(160, 16, 11, 0.966);
-  --yellow: rgba(246, 239, 35, 0.966);
 }
 
 .list {
@@ -27,6 +26,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 20px;
 }
 .content_row {
   display: flex;
@@ -118,8 +118,15 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  /*margin-left: 100px;*/
-  /*margin-right: 5px;*/
+  background-color: rgb(22, 9, 139);
+  background: radial-gradient(
+    circle,
+    rgba(22, 9, 139, 1) 0%,
+    rgba(255, 255, 255, 1) 16%,
+    rgba(255, 255, 255, 1) 82%,
+    rgba(22, 9, 139, 1) 100%
+  );
+  opacity: 0.5;
   padding: 5px;
 }
 .menu3 {
@@ -273,9 +280,7 @@
   color: beige;
   padding: 10px;
 }
-.yellow {
-  color: var(--yellow);
-}
+
 .content-subtitlesins {
   color: var(--color_text);
   padding: 10px;
@@ -1092,8 +1097,10 @@ a {
   overflow: hidden;
   border: rgb(221, 211, 211) solid 1px;
   text-decoration: none;
-  height: 370px;
+  height: 320px;
   width: 370px;
+  text-align: center;
+  background-color: black;
 }
 
 .target-portfolio:hover {
@@ -1559,6 +1566,7 @@ flotante {
   top: 50%;
   left: 80%;
   animation-duration: 5s;
+}
 
 .fondo-cos {
   background-image: url(../images/A.cosmos.png);
@@ -1582,4 +1590,22 @@ flotante {
 
 .yellow {
   color: var(--yellow);
+}
+
+.book {
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(235, 229, 229);
+}
+
+.sectioncos {
+  display: flex;
+  margin-top: 30px;
+  padding-bottom: 60px;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }
