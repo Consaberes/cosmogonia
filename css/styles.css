@@ -1625,3 +1625,295 @@ flotante {
   flex-direction: row;
   justify-content: center;
 }
+
+/* Por si acaso es pecífico esto, esto sirve: para hacer responsivos los iframes, osease por ejemplo los videos de youtube, presentaciones de prezzi,, documentos formales, entre otros. */
+.RWD-iframe {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 15px;
+  height: 0;
+  overflow: hidden;
+  }
+
+  .RWD-iframe iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+
+/* Estilos base (para dispositivos móviles) */
+:root {
+  --blue_college: rgba(14, 4, 123, 1);
+  --red_college: rgba(245, 1, 1, 1);
+  --red_college_dark: rgba(155, 11, 11, 0.935);
+  --gray_college: rgba(128, 128, 128, 1);
+  --white: rgba(255, 255, 255, 1);
+  --color_text: rgba(0, 0, 0, 1);
+  --color_network: rgba(141, 134, 134, 1);
+  --shadow: rbga(220, 220, 223, 1);
+  --red_collage_m: rgba(160, 16, 11, 0.966);
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  box-shadow: 0px 0px 5px rgb(220, 220, 223);
+  padding: 10px;
+}
+
+.ola {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.content_row,
+.content_row-reverse,
+.content_column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.content-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.title-is,
+.title-isc {
+  display: flex;
+  height: 40px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+}
+
+.title-is {
+  background-color: var(--gray_college);
+}
+
+.title-isc {
+  background-color: var(--blue_college);
+}
+
+.desing-areas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-areas {
+  width: 100%;
+  font-family: Roboto;
+}
+
+.desing-image {
+  border-radius: 25%;
+  max-width: 100%;
+  height: auto;
+}
+
+.school-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--blue_college);
+  color: var(--white);
+  font-size: 12px;
+  padding: 10px;
+}
+
+.menu,
+.menu2,
+.menu3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.menu-horizontal,
+.menu-horizontal-sup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.menu-horizontal > li > a,
+.menu-horizontal-sup > li > a {
+  display: block;
+  padding: 10px;
+  color: var(--color_text);
+  text-decoration: none;
+  font-size: 14px;
+  width: 100%;
+  text-align: center;
+}
+
+.menu-vertical,
+.menu-vertical-sup {
+  display: none;
+}
+
+.menu-icon {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+  fill: var(--blue_collegese);
+  border-radius: 50%;
+}
+
+.btn-lang1,
+.btn-lang2,
+.btn-lang3 {
+  width: 32px;
+  height: 32px;
+  background-size: cover;
+  border: none;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.content-section {
+  width: 100%;
+}
+
+.subtitles {
+  font-size: 18px;
+  padding: 10px;
+  width: 100%;
+}
+
+.section-footer {
+  width: 100%;
+  margin-top: 20px;
+  border: var(--red_collage_m) 4px solid;
+}
+
+.content-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px;
+  line-height: 1.5em;
+}
+
+/* Media query para tablets */
+@media screen and (min-width: 768px) {
+  .container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .content_row,
+  .content_row-reverse {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .desing-areas {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .school-title {
+    flex-direction: row;
+    font-size: 14px;
+  }
+
+  .menu,
+  .menu2,
+  .menu3 {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .menu-horizontal,
+  .menu-horizontal-sup {
+    flex-direction: row;
+  }
+
+  .menu-horizontal > li > a,
+  .menu-horizontal-sup > li > a {
+    width: auto;
+  }
+
+  .content-footer {
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 16px;
+  }
+}
+
+/* Media query para computadoras de escritorio */
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 80%;
+    padding: 20px;
+  }
+
+  .school-title {
+    font-size: 16px;
+  }
+
+  .menu-horizontal > li > a,
+  .menu-horizontal-sup > li > a {
+    font-size: 16px;
+  }
+
+  .menu-vertical,
+  .menu-vertical-sup {
+    display: none;
+    position: absolute;
+    width: 200px;
+    background-color: var(--blue_college);
+  }
+
+  .menu-horizontal li:hover .menu-vertical,
+  .menu-horizontal-sup li:hover .menu-vertical-sup {
+    display: block;
+  }
+
+  .content-footer {
+    font-size: 18px;
+  }
+}
+
+/* Media query para pantallas grandes */
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 70%;
+  }
+
+  .school-title {
+    font-size: 18px;
+  }
+
+  .menu-horizontal > li > a,
+  .menu-horizontal-sup > li > a {
+    font-size: 18px;
+  }
+}
